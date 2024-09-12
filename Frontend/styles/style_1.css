@@ -1,11 +1,10 @@
-.button {
-    width: 150px;
-    padding: 15px;
-    background-color: aqua;
-    border-radius: 20px;
-    border: none;
+.wrapper {
+    background: rgba(0, 0, 0, 0.8);
 }
 
-.button:hover {
-    cursor: pointer;
+.h2 {
+    width: 250px;
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 15px;
 }
