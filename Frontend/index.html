@@ -12,7 +12,7 @@
             <div class="left_content">
                 <div class="logo">
                     <img
-                        src="/img/logo.png"
+                        src="img/logo.png"
                         width="100"
                         height="100"
                         style="vertical-align: middle"
@@ -20,6 +20,7 @@
                     <span class="text">Easy file</span>
                 </div>
                 <div class="root">
+                    <h4 id="zagolovok"></h4>
                     <p>fghdkgfkhljkkhjlj</p>
                     <p>drfjfghkhglj\</p>
                     <p>gfhkhgjljhkl;jhk</p>
@@ -84,6 +85,13 @@
                     <p>gfhkhgjljhkl;jhk</p>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+            </div>
+            <script type="text/javascript">
+                var p = document.getElementById("zagolovok");
+                const num = eel.my_python_function(1, 2)().then((result) => {
+                    p.textContent = result[0];
+                });
+            </script>
+            </body>
+            
+            </html>
