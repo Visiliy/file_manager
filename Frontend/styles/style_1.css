@@ -28,6 +28,7 @@
     overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-color: #b454f5;
+    min-width: 200px;
 
 }
 

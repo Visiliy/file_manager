@@ -7,7 +7,7 @@ def close_callback(route, websockets):
 
 
 @eel.expose
-def my_python_function(a, b):
+def file_rendering():
     operator = FileSystemOperator()
     return operator.test_function()
 
