@@ -6,6 +6,7 @@ def close_callback(route, websockets):
         exit()
 
 
+
 @eel.expose
 def file_rendering():
     operator = FileSystemOperator()
