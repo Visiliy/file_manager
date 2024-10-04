@@ -10,7 +10,14 @@
 
 .left_content {
     width: 16.8%;
+    float: left;
     position: absolute;
+}
+
+.right_content {
+    float: right;
+    width: 83.2%;
+    position: relative;
 }
 
 .logo {
@@ -24,7 +31,7 @@
     border-radius: 12px;
     background-color: rgb(115, 34, 190);
     width: 100%;
-    height: 87vh;
+    height: 86vh;
     overflow-y: auto;
     scroll-behavior: smooth;
     scrollbar-color: #b454f5;
@@ -49,4 +56,57 @@
 .root::-webkit-scrollbar-thumb {
     background-color: aqua;
     border-radius: 20px;
+}
+
+.searh {
+    top: 10%;
+    height: 8.44vh;
+    user-select: none;
+}
+
+.workplace {
+    width: 98%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    height: 86vh;
+    margin-left: 1%;
+    margin-top: 2.2%;
+    user-select: none;
+
+}
+
+.input {
+    width: 37%;
+    height: 50px;
+    border: none;
+    border-radius: 14px;
+    margin-left: 1%;
+    margin-top: 1.8%;
+    outline: none;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.btn {
+    border: none;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 14px;
+    width: 150px;
+    user-select: none;
+    margin-left: 1%;
+    position: relative;
+    bottom: 2%;
+    background-color: rgb(115, 34, 190);
+    
+
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:before {
+    cursor: pointer;
 }

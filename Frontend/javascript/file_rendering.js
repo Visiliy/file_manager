@@ -5,7 +5,7 @@ const array = [
 ];
 
 function file_representation(array) {
-    var item;
+    let item;
     for (item of array) {
         if (typeof item === "object") {
             file_representation(item);

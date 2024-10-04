@@ -1,16 +1,18 @@
 import eel
+
 from Packages.file_system_operator import FileSystemOperator
+
 
 def close_callback(route, websockets):
     if not websockets:
         exit()
 
 
-
 @eel.expose
 def file_rendering():
     operator = FileSystemOperator()
     return operator.test_function()
+
 
 def main():
     eel.init("Frontend")
