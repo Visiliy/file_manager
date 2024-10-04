@@ -77,8 +77,8 @@
 
 .input {
     width: 37%;
-    height: 50px;
-    border: none;
+    height: 44px;
+    border: 3px solid rgb(115, 34, 190);;
     border-radius: 14px;
     margin-left: 1%;
     margin-top: 1.8%;
@@ -91,13 +91,14 @@
 .btn {
     border: none;
     font-size: 18px;
-    padding: 14px;
+    padding: 16px;
     border-radius: 14px;
     width: 150px;
     user-select: none;
     margin-left: 1%;
     position: relative;
     bottom: 2%;
+    transition: transform 0.4s ease;
     background-color: rgb(115, 34, 190);
     
 
@@ -105,8 +106,10 @@
 
 .btn:hover {
     cursor: pointer;
+    transform: scale(0.95)
 }
 
 .btn:before {
     cursor: pointer;
+    transform: scale(0.95)
 }
