@@ -20,7 +20,7 @@ class FileSystemOperator:
     def __init__(self):
         pass
 
-    def getting_folder_and_files(self, path: str, showing_files=False, deptj=0) -> list:
+    def getting_folder_and_files(self, path: str, showing_files=False, deptj=0) -> list: 
         return file_crawling(path)
 
     def test_function(self) -> list:

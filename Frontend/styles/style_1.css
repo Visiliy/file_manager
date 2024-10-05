@@ -50,7 +50,7 @@
 }
 
 .root::-webkit-scrollbar {
-    width: 14px;
+    width: 10px;
 }
 
 .root::-webkit-scrollbar-thumb {
