@@ -9,43 +9,45 @@ const array = [
             "fale_3.txt",
             "fale_4.txt",
             "fale_5.txt",
-            ["package_1_1_1", "file_1.png"],
+            ["package_1_1_1", "file_1.png", "file_2.png"],
         ],
     ],
     ["peckage_2"],
 ];
 
-function file_representation(array) {
+function file_representation(array, indent) {
     let item;
     for (item of array) {
         if (typeof item === "object") {
-            file_representation(item);
+            file_representation(item, indent + 50);
         } else {
             const div = document.createElement("div");
             const img = document.createElement("img");
             const text = document.createElement("h4");
             text.textContent = item;
+            img.style.marginLeft = `${indent}px`;
             if (item.includes(".")) {
                 img.src = "img/file.png";
-                img.width = "80";
-                img.height = "90";
+                img.width = "60";
+                img.height = "70";
                 div.appendChild(img);
-                text.style.marginLeft = "12px";
+                text.classList.add("file_text");
+                text.style.marginLeft = `${10 + indent}px`;
             } else {
                 img.src = "img/folder.png";
-                img.width = "80";
-                img.height = "80";
+                img.width = "60";
+                img.height = "60";
                 div.appendChild(img);
-                text.style.marginLeft = "8px";
+                text.classList.add("folder_text");
+                text.style.marginLeft = `${6 + indent}px`;
             }
-            text.style.marginTop = "-1%";
-            div.style.userSelect = "none";
+            div.classList.add("content_div");
             div.appendChild(text);
             root.appendChild(div);
         }
     }
 }
-file_representation(array);
+file_representation(array, -50);
 console.log("stop");
 
 // const num = eel
